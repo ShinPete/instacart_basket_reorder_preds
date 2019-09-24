@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="product_name_prevalence_code <= 0.0\nentropy = 1.0\nsamples = 121629\nvalue = [60814.5, 60814.5]", fillcolor="#399de500"] ;
+1 [label="add_to_cart_order <= 7.5\nentropy = 0.984\nsamples = 60664\nvalue = [35792.727, 26554.109]", fillcolor="#e5813942"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.999\nsamples = 33035\nvalue = [17303.955, 15973.407]", fillcolor="#e5813914"] ;
+1 -> 2 ;
+21059 [label="entropy = 0.946\nsamples = 27629\nvalue = [18488.772, 10580.701]", fillcolor="#e581396d"] ;
+1 -> 21059 ;
+38294 [label="product_name_prevalence_code <= 0.004\nentropy = 0.982\nsamples = 60965\nvalue = [25021.773, 34260.391]", fillcolor="#399de545"] ;
+0 -> 38294 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+38295 [label="add_to_cart_order_mod <= 5.5\nentropy = 0.991\nsamples = 51805\nvalue = [22625.239, 28169.806]", fillcolor="#399de532"] ;
+38294 -> 38295 ;
+38296 [label="entropy = 0.962\nsamples = 23013\nvalue = [8504.028, 13583.698]", fillcolor="#399de55f"] ;
+38295 -> 38296 ;
+53825 [label="entropy = 1.0\nsamples = 28792\nvalue = [14121.211, 14586.107]", fillcolor="#399de508"] ;
+38295 -> 53825 ;
+73982 [label="entropy = 0.859\nsamples = 9160\nvalue = [2396.534, 6090.586]", fillcolor="#399de59b"] ;
+38294 -> 73982 ;
+}
